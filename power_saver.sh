@@ -5,8 +5,8 @@ read choice
 if [ $choice -eq 1 ]
 then
     sudo iw wlo1 set power_save on
-    echo "Power Save -> ON"
+    sudo iw wlo1 get power_save
 else
     sudo iw wlo1 set power_save off
-    echo "Power Save -> OFF"
+    sudo iw wlo1 get power_save
 fi
